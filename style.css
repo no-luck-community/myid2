@@ -1,0 +1,144 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgb(26, 188, 156);
+	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: verdana,tahoma,sans-serif;
+}
+
+h1 {
+    color: rgb(72, 101, 88);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+header {
+    width: 90%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.share-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgb(59, 103, 105);
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+
+
+.image-container {
+    width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 3px rgb(120, 167, 182) solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.image-container img {
+    height: 100%;
+}
+
+.tile {
+    width: 85%;
+    background-color: transparent;
+    margin: 7px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(61, 91, 86);
+  
+}
+
+.tile:hover{
+    transition: cubic-bezier(0.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.05);
+}
+
+.tile-share-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(79, 105, 130);
+
+}
+
+.icons {
+    margin: 3px 10px;
+    width: 50px;
+    height: 50px;
+    color: antiquewhite;
+}
+
+.fa-instagram, .fa-snapchat, .fa-github {
+    font-size: 40px;
+    margin: 9px 15px;
+    color: rgb(65, 59, 59);
+      
+}
+
+.fa-arrow-up-from-bracket {
+    color: beige;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.arrow{
+    font-size: 16px;
+    margin-left: 14px;
+    margin-top: 11px;
+    color: black;
+}
+
+.nme {
+    color: rgb(54, 49, 49);
+    font-size: 17px;
+}
