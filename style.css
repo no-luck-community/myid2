@@ -38,6 +38,11 @@ header {
     margin-top: 30px;
 }
 
+.share-button:hover{
+    transition: cubic-bezier(0.08, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.08);
+}
+
 .container {
     width: 100%;
     max-width: 600px;

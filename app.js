@@ -1,4 +1,4 @@
-const shareButtons = document.querySelectorAll('.tile-share-button');
+const shareButtons = document.querySelectorAll('.tile-share-button, .share-button');
 
 async function copyText(e) {
     // prevent button from navigating to the site
